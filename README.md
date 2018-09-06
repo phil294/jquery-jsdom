@@ -3,7 +3,7 @@ Docker image for JQuery in command line
 
 Samle usage:
 
-`$ docker run --rm -it phil294/jquery-jsdom '<p>Hello!</p>' '$("a").text()'`
+`$ docker run --rm -it phil294/jquery-jsdom '<p>Hello!</p>' '$("p").text()'`
 
 prints
 
