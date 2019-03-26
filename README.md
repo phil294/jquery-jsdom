@@ -3,11 +3,11 @@ Docker image for JQuery in command line
 
 Samle usage:
 
-`$ docker run --rm -it phil294/jquery-jsdom '<p>Hello!</p>' '$("p").text()'`
+`$ docker run --rm -it phil294/jquery-jsdom '$("p").text()' <<< '<p>Hello!</p>'`
 
 prints
 
 `$ Hello!`
 
-- 1st param: The HTML string
-- 2nd param: JavaScript code which is run inside `eval()`. The result is printed out. JQuery is accessible through the variable `$`.
+- Reads HTML from stdin
+- 1st param: JavaScript code which is run inside `eval()`. The result is printed out. JQuery is accessible through the variable `$`.
